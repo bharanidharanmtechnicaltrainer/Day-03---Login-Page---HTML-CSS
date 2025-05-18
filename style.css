@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    background:linear-gradient(to right, #6a11cb, #2575fc)
+}
+
+.logincontainer{
+    border-radius:14px;
+    padding:30px 40px;
+    background-color: #ffffff;
+    width:100%;
+    max-width:400px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+.loginform{
+    display:flex;
+    flex-direction:column;
+}
+
+.loginform h1{
+    margin-bottom:20px;
+    text-align:center;
+
+}
+
+.loginform input{
+    padding:14px;
+    margin-bottom:20px;
+    border-radius:10px;
+    border:1px solid #ccc;
+    font-size:16px;
+
+}
+
+.loginform label{
+    margin:8px;
+}
+
+.loginform button{
+    padding:15px;
+    font-size:16px;
+    border-radius:8px;
+    color:white;
+    background-color:#2575fc;
+    cursor:pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom:10px;
+}
+
+.loginform button:hover{
+    background-color: #1a5fd6;
+}
+
+.loginform .register a{
+    color:#2575fc;
+    text-decoration: none;
+}
+
+.loginform .register a:hover{
+    text-decoration: underline;
+}
+
+/*media queries - mobile responsive */
+
+@media(max-width:480px){
+    .logincontainer{
+        padding:20px;
+    }
+
+    .loginform input,
+    .loginform label,
+    .loginform button{
+        font-size:14px;
+    }
+}
+
